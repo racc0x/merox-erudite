@@ -100,7 +100,7 @@ const experience: ExperienceItem[] = [
   <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
   
   <!-- Hero Section -->
-  <section class="relative overflow-hidden rounded-xl border">
+  <section class="relative overflow-hidden rounded-xl border" style="min-height: clamp(280px, 40vh, 400px);">
     <!-- Gradient Background -->
     <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-background" aria-hidden="true"></div>
     
@@ -110,12 +110,12 @@ const experience: ExperienceItem[] = [
         <!-- Main Content -->
         <div class="flex-1 min-w-0 space-y-6">
           <!-- Heading -->
-          <div class="space-y-4">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl leading-tight font-bold tracking-tight">
+          <div class="space-y-4" style="min-height: clamp(120px, 20vh, 180px);">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl leading-[1.1] font-bold tracking-tight" style="font-variation-settings: 'wght' 700;">
               Welcome to<br class="hidden sm:block" />
               <span class="text-primary">{SITE.title}</span>
             </h1>
-            <p class="text-muted-foreground mt-4 leading-relaxed text-base md:text-lg max-w-xl">
+            <p class="text-muted-foreground mt-4 leading-relaxed text-base md:text-lg max-w-xl" style="min-height: 3rem;">
               {SITE.description}
             </p>
           </div>
