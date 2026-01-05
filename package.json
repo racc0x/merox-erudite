@@ -25,8 +25,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "prettier": "prettier --write **/*.{ts,tsx,css,astro} --ignore-path .gitignore",
-    "postinstall": "patch-package",
-    "deno-deploy": "npm run build && cd dist && deployctl deploy jsr:@std/http/file-server"
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.5",
