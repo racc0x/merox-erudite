@@ -288,18 +288,19 @@ try {
       parentPost={isCurrentSubpost ? navigation.parent : undefined}
     />
 
-    {
-      /* Only show Disqus on main posts, not subposts */
-      !isCurrentSubpost && (
-        <div class="col-start-2 mt-12">
+  
+    {/* { this part is commented out until DISQUS const is re-enabled
+      SITE.comments.provider === 'disqus' && const DISQUS.shortname && (
+        <div class="col-start-2 mt-10">
           <Disqus
-            identifier={`blog-${currentPostId}`}
+            shortname={DISQUS.shortname}
+            identifier={currentPostId}
             title={post.data.title}
-            url={new URL(`/blog/${currentPostId}`, SITE.href).href}
+            url={`${SITE.url}/blog/${currentPostId}`}
           />
         </div>
       )
-    }
+      } */  
   </section>
 
 
