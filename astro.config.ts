@@ -71,9 +71,6 @@ export default defineConfig({
     icon(),
   ],
   vite: {
-    server: {
-      allowedHosts: ['astro-astroblog-tqltmu-053fa0-72-62-165-135.traefik.me']
-    },
     // Type assertion needed due to Vite plugin type incompatibility between Astro and @tailwindcss/vite
     // This is the recommended approach per Astro documentation for Vite plugins
     plugins: [tailwindcss() as any],
@@ -81,6 +78,7 @@ export default defineConfig({
   server: {
     port: 1234,
     host: true,
+    allowedHosts: true,
   },
   devToolbar: {
     enabled: false,
