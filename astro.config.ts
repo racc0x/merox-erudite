@@ -19,7 +19,7 @@ import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  site: 'https://racc0x.com', // Update with your domain
+  site: 'https://r4cc0x.tech', // Update with your domain
   // Static output - API routes are handled by Cloudflare Pages Functions in /functions folder
   integrations: [
     expressiveCode({
